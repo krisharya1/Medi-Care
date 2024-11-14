@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicine Prescription Management</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo"><img src="T_Caduceus Icon.jpg" height="35" width="35"> 
+             <a href="signup.html">Medicare</a>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html"><b>Home</b></a></li>
+        <li><a href="about.html"><b>About</b></a></li>
+        <li><a href="services.html"><b>Services</b></a></li>
+        <li><a href="pricing.html"><b>Pricing</b></a></li>
+        <li><a href="contact.html"><b>Contact Us</b></a></li>
+      </ul>
+    </nav>
+    <button class="cta-button"><a href="signup.html"><b>Get Started</b></a></button>
+    
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Manage Your Prescriptions with Ease</h1>
+      <p>Track your medication, set reminders, and get access to reliable medical information in one platform.</p>
+      <button class="hero-cta"><a href="signup.html">Get Started For Free</a></button>
+    </div>
+    <div class="hero-image">
+      <img src="Home1.jpg" width="300" alt="Prescription management illustration">
+    </div>
+  </section>
+
+
+  <!-- Key Features Section -->
+  <section class="key-features">
+    <h2>Our Key Features</h2>
+    <div class="features-container">
+      <div class="feature-card" onclick="showFeatureDetails('Composition Information')">
+        <img src="composition.jpg" alt="Medicine Composition Icon">
+        <h3>Medicine Composition</h3>
+        <p>View detailed information about the composition of each medicine.</p>
+      </div>
+      <div class="feature-card" onclick="showFeatureDetails('Prescription Tracking')">
+        <img src="prescription.jpg" alt="Prescription Tracking Icon">
+        <h3>Prescription Tracking</h3>
+        <p>Keep track of all your prescriptions in one place.</p>
+      </div>
+      <div class="feature-card" onclick="showFeatureDetails('Dosage Reminders')">
+        <img src="dosage reminder.jpg" alt="Dosage Reminders Icon">
+        <h3>Dosage Reminders</h3>
+        <p>Set reminders for medication doses and never miss a dose.</p>
+      </div>
+      <div class="feature-card" onclick="showFeatureDetails('Refill Management')">
+        <img src="refill management.jpg" alt="Refill Management Icon">
+        <h3>Refill Management</h3>
+        <p>Easily manage and schedule refills for your prescriptions.</p>
+      </div>
+      <div class="feature-card" onclick="showFeatureDetails('Side Effect Notifications')">
+        <img src="sideeff.jpg" alt="Side Effect Notifications Icon">
+        <h3>Side Effect Notifications</h3>
+        <p>Receive alerts for potential side effects of your medication.</p>
+      </div>
+      <div class="feature-card" onclick="showFeatureDetails('Doctor-Patient Interaction')">
+        <img src="doctor pateint.jpg" alt="Doctor-Patient Interaction Icon">
+        <h3>Doctor-Patient Interaction</h3>
+        <p>Stay connected with healthcare providers for guidance.</p>
+      </div>
+    </div>
+  </section>
+
+   <!-- Benefits Section -->
+   <section class="benefits">
+    <h2>Why Choose Us?</h2>
+    <div class="benefits-container">
+      <div class="benefit-card" onclick="showBenefitDetails('Easy Management')">
+        <h3>Easy Prescription Management</h3>
+        <p>Effortlessly manage all your prescriptions from one place.</p>
+      </div>
+      <div class="benefit-card" onclick="showBenefitDetails('Data Security')">
+        <h3>Safe & Secure Data</h3>
+        <p>Your personal and medical information is kept confidential and secure.</p>
+      </div>
+      <div class="benefit-card" onclick="showBenefitDetails('Medication Reminders')">
+        <h3>Medication Reminders</h3>
+        <p>Get timely reminders to take your medications as prescribed.</p>
+      </div>
+      <div class="benefit-card" onclick="showBenefitDetails('Professional Advice')">
+        <h3>Access to Professional Advice</h3>
+        <p>Consult healthcare professionals easily for guidance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonials-container">
+      <div class="testimonial-card">
+        <p>"This app has changed the way I manage my prescriptions. I never miss a dose!"</p>
+        <h4>- Dr.Pushpendar </h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"I love the easy-to-use interface and the reminder features. Highly recommend!"</p>
+        <h4>- Nidhi Arora</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"A lifesaver! Now I can keep track of my medications without stress."</p>
+        <h4>- Pradeep Kumar</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"The security features give me peace of mind. I trust my data is safe."</p>
+        <h4>- Ajay Kumar Badhan</h4>
+      </div>
+    </div>
+  </section>
+
+<!-- Pricing Section -->
+<section class="pricing">
+    <h2>Choose Your Plan</h2>
+    <div class="pricing-container">
+      <div class="pricing-card">
+        <h3>Basic</h3>
+        <p class="price">₹299/month</p>
+        <ul>
+          <li>Access to medicine composition</li>
+          <li>Prescription tracking</li>
+          <li>Email reminders</li>
+        </ul>
+        <button onclick="selectPlan('Basic')">Select Plan</button>
+      </div>
+      <div class="pricing-card featured">
+        <h3>Pro</h3>
+        <p class="price">₹599/month</p>
+        <ul>
+          <li>All Basic features</li>
+          <li>Dosage reminders</li>
+          <li>Refill management</li>
+          <li>Priority support</li>
+        </ul>
+        <button onclick="selectPlan('Pro')">Select Plan</button>
+      </div>
+      <div class="pricing-card">
+        <h3>Premium</h3>
+        <p class="price">₹999/month</p>
+        <ul>
+          <li>All Pro features</li>
+          <li>Side effect notifications</li>
+          <li>Doctor-patient interaction</li>
+          <li>Data security</li>
+        </ul>
+        <button onclick="selectPlan('Premium')">Select Plan</button>
+      </div>
+    </div>
+  </section>
+
+   <!-- FAQs Section -->
+   <section class="faqs">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faqs-container">
+      <div class="faq-item">
+        <h3 class="faq-question" onclick="toggleAnswer(this)">What is the purpose of this app?</h3>
+        <p class="faq-answer">This app helps users manage their prescriptions effectively, including tracking dosages and setting reminders.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question" onclick="toggleAnswer(this)">Is my data secure?</h3>
+        <p class="faq-answer">Yes, we prioritize user privacy and employ robust security measures to protect your data.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question" onclick="toggleAnswer(this)">Can I access my prescriptions from multiple devices?</h3>
+        <p class="faq-answer">Absolutely! You can access your account from any device with internet connectivity.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question" onclick="toggleAnswer(this)">How can I contact support?</h3>
+        <p class="faq-answer">You can reach our support team via the contact form on our website or email us directly.</p>
+      </div>
+    </div>
+  </section>
+
+   <!-- Call to Action Section -->
+   <section class="cta">
+    <h2>Ready to Get Started?</h2>
+    <p>Join thousands of satisfied users who manage their prescriptions effortlessly.</p>
+    <button class="hero-cta"><a href="signup.html">Sign Up Now</a></button>
+  </section>
+  
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href=" https://www.facebook.com/krish.arya.568294" class="social-icon">Facebook</a>
+          <a href="" class="social-icon">Twitter</a>
+          <a href="https://www.instagram.com/krishhh_arya/profilecard/?igsh=bHk2cXlvdnQzY2Yx" class="social-icon">Instagram</a>
+          <a href="www.linkedin.com/in/krish-arya" class="social-icon">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Prescription Manager. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

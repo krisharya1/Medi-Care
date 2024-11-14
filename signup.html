@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - MediCare</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo"><img src="T_Caduceus Icon.jpg" height="35" width="35"> 
+             <a href="#">Medicare</a>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html"><b>Home</b></a></li>
+        <li><a href="about.html"><b>About</b></a></li>
+        <li><a href="services.html"><b>Services</b></a></li>
+        <li><a href="#pricing"><b>Pricing</b></a></li>
+        <li><a href="contact.html"><b>Contact Us</b></a></li>
+      </ul>
+    </nav>
+  </header> 
+
+  <!-- Sign Up Form Section -->
+  <section class="signup-section">
+    <h1>Create Your Account</h1>
+    <p>Join MediCare and start managing your health today.</p>
+
+    <form id="signupForm" class="signup-form">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+      </div>
+
+      <button type="submit">Sign Up</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2024 MediCare. All rights reserved.</p>
+  </footer>
+
+  <script src="signup.js"></script>
+</body>
+</html>
